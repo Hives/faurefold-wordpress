@@ -1,0 +1,73 @@
+@import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+$site-width: 960px;
+
+.full-width {
+	width: $site-width;
+	margin: 0 auto;
+}
+
+header {
+	.top, .bottom {
+		padding: 5px;
+	}
+
+	.top {
+		background-color: $color__gg_pink;
+		color: white;
+		text-align: right;
+	}
+
+	.middle {
+		padding: 20px;
+	}
+
+	.bottom {
+		background-color: $color__gg_blue;
+	}
+
+	img {
+		float: left;
+		margin-right: 50px;
+	}
+
+	h1.site-title {
+		clear: none;
+		font-size: 600%;
+		margin: 0;
+		a {
+			color: $color__gg_pink;
+			text-decoration: none;
+		}
+	}
+}
+
+#content {		
+	width: $site-width;
+	margin: 0 auto;
+}
+
+#main {
+	padding: 20px;
+}
+
+#secondary {
+	padding: 20px;
+}
+
+// this is the whole site footer
+#colophon {
+	padding: 5px;
+	color: white;
+	background-color: $color__gg_blue;
+}
