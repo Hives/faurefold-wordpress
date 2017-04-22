@@ -42,19 +42,17 @@
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>				
 			</div>
 
-			<div class="bottom">
-				&nbsp;				
-			</div>
 		</div><!-- .site-branding -->
 
-<?php /* ?>
+		<div class="bottom">
+			<div class="nav-container full-width">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'faurefold' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav><!-- #site-navigation -->
+			</div>
+		</div>
 
-		<nav id="site-navigation" class="main-navigation bottom" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'faurefold' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-
-<?php */ ?>
 
 	</header><!-- #masthead -->
 

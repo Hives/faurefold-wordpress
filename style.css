@@ -300,7 +300,7 @@ hr {
   margin-bottom: 1.5em; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 1.5em 0; }
 
 ul {
   list-style: disc; }
@@ -310,8 +310,7 @@ ol {
 
 li > ul,
 li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-bottom: 0; }
 
 dt {
   font-weight: bold; }
@@ -438,17 +437,21 @@ a {
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
+      font-size: 0.9rem;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5em;
+      top: 100%;
       left: -999em;
       z-index: 99999; }
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-        left: 100%; }
+      .main-navigation ul ul li {
+        padding: 10px;
+        background-color: #4F86C6; }
+        .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+          left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
@@ -456,8 +459,13 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    padding: 10px;
+    transition: background-color 0.2s ease; }
+    .main-navigation li:hover, .main-navigation li.focus {
+      background-color: #C40064; }
   .main-navigation a {
+    color: white;
     display: block;
     text-decoration: none; }
 
@@ -577,8 +585,6 @@ a {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
-  .widget ul, .widget ol {
-    margin-left: 0; }
 
 /*--------------------------------------------------------------
 # Content
@@ -642,7 +648,7 @@ a {
   width: 960px;
   margin: 0 auto; }
 
-header .top, header .bottom {
+header .top {
   padding: 5px; }
 header .top {
   background-color: #C40064;
@@ -652,6 +658,10 @@ header .middle {
   padding: 20px; }
 header .bottom {
   background-color: #4F86C6; }
+header .nav-container {
+  content: "";
+  display: table;
+  table-layout: fixed; }
 header img {
   float: left;
   margin-right: 50px; }
