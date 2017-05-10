@@ -452,7 +452,6 @@ a {
         left: -999em;
         top: 0; }
       .main-navigation ul ul li {
-        padding: 10px;
         background-color: #4F86C6; }
         .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
           left: 100%; }
@@ -464,11 +463,11 @@ a {
   .main-navigation li {
     float: left;
     position: relative;
-    padding: 10px;
     transition: background-color 0.2s ease; }
     .main-navigation li:hover, .main-navigation li.focus {
       background-color: #C40064; }
   .main-navigation a {
+    padding: 10px;
     color: white;
     display: block;
     text-decoration: none; }
