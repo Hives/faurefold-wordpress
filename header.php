@@ -9,6 +9,9 @@
  * @package Faurefold
  */
 
+
+$environment = WP_DEBUG == true ? "local" : "production";
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -20,6 +23,17 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php if ( $environment == "local" ) { ?>
+	<div id="test-server-warning">
+		<div class= "vertical-section">
+			<p class="warning">
+				This is a test version of the site
+			</p>
+		</div>
+	</div>
+<?php } ?>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'faurefold' ); ?></a>
 
