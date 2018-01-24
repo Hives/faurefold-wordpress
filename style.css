@@ -658,6 +658,7 @@ header .top {
   color: white;
   text-align: right; }
 header .middle {
+  position: relative;
   padding: 20px; }
 header .bottom {
   background-color: #4F86C6; }
@@ -665,16 +666,35 @@ header .nav-container {
   content: "";
   display: table;
   table-layout: fixed; }
-header img {
+header .guiding-logo {
   float: left;
   margin-right: 50px; }
 header h1.site-title {
   clear: none;
-  font-size: 600%;
-  margin: 0; }
+  font-size: 500%;
+  margin: 0;
+  float: left; }
   header h1.site-title a {
     color: #C40064;
     text-decoration: none; }
+header .title-and-logo {
+  width: 80%; }
+header .social-media {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height: 50px; }
+header .facebook, header .mydonate {
+  float: right; }
+header .facebook {
+  padding-right: 10px; }
+header .mydonate-logo {
+  height: 50px; }
+header .fa-facebook-square {
+  font-size: 50px;
+  color: #3b5998; }
+  header .fa-facebook-square:hover {
+    color: #C40064; }
 
 #content {
   width: 960px;

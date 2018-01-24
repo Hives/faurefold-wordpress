@@ -29,6 +29,7 @@ header {
 	}
 
 	.middle {
+		position: relative;
 		padding: 20px;
 	}
 
@@ -43,20 +44,53 @@ header {
 	#site-navigation {
 	}
 
-	img {
+	.guiding-logo {
 		float: left;
 		margin-right: 50px;
 	}
 
 	h1.site-title {
 		clear: none;
-		font-size: 600%;
+		font-size: 500%;
 		margin: 0;
+		float: left;
 		a {
 			color: $color__gg_pink;
 			text-decoration: none;
 		}
 	}
+
+	.title-and-logo {
+		width: 80%;
+	}
+
+	.social-media {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		height: 50px;
+	}
+
+	.facebook, .mydonate {
+		float: right;
+	}
+
+	.facebook {
+		padding-right: 10px;
+	}
+
+	.mydonate-logo {
+		height: 50px;
+	}
+
+	.fa-facebook-square {
+		font-size: 50px;
+		color: #3b5998;
+		&:hover {
+			color: $color__gg_pink
+		}
+	}
+
 }
 
 #content {		
