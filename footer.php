@@ -15,7 +15,8 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="full-width">
-			 © Girlguiding Surrey East
+            <div class="copyright">&copy; Girlguiding Surrey East</div>
+            <div class="privacy-policy">Download our privacy policy: <a href="<?php echo get_stylesheet_directory_uri(); ?>/docs/faurefold-privacy-notice.pdf">faurefold-privacy-notice.pdf</a></div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
